@@ -1,50 +1,674 @@
-@import url(../font/beon.zip);
+@import url(../font/beon/beon-webfont.woff);
+@import url(../font/Gotham-Black.otf);
 
-body {
+@font-face {
+    font-family: gotham_m;
+    src: url(../font/GothamMedium_1.ttf);
+}
+
+@font-face {
+    font-family: gotham_b;
+    src: url(../font/Gotham-Black.otf);
+}
+
+@font-face {
+    font-family: beon;
+    src: url(../font/beon/beon-webfont.woff);
+}    
+
+/* z index van https://stackoverflow.com/questions/66292396/is-it-possible-to-keep-relative-elements-below-a-sticky-navbar*/
+
+
+body{
     background-image: url(../images/ingang.jpg), linear-gradient(#000000, #170217);
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+/* body van pagina 2*/
+.spellenbody{
+    background-image: linear-gradient(#0a010a, #020202, rgb(0, 0, 0));
+}
+
+/*alles in de header blijft staan op zijn plek als je naar beneden scrollt*/
+header{
+    position: sticky;
+    top: 0em;
+    z-index: 1;
+}
+
+/* button in header menu*/
+header button{
+    display:grid;
+    place-items:center;
+    background-color: #110216;
+    background-image: linear-gradient(-112deg,#e44890,#4b277e);
+    background-size:0% 0%;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:50%;
+    transition-duration:.5s;
+    height: 3.5em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.7em;
+}
+
+/* achtergrond kleur veranderd van de menu*/
+header button.verander{
+    background-size:100% 100%
+}
+
+/* positie geven aan de streepjes van de menu*/
+header button span{
+    background-color: white;
+    grid-row-start:1;
+    grid-column-start:1;
+    width:1.2em;
+    height:.2em;
+    transition-duration:.5s;
+}
+
+/* streepje 1*/
+header button span:nth-of-type(1){
+    transform-origin:.275em .1em;
+    transform:
+    translateY(-.4em) 
+    translateX(0) 
+    rotate(0deg) 
+    scalex(1);
+}
+
+/* streepje 3*/
+header button span:nth-of-type(3){
+    transform-origin:calc(100% - .275em) .1em;
+    transform:
+    translateY(-.4em) 
+    translateX(0) 
+    rotate(0deg) 
+    scalex(1);
+}
+
+/* streepje 1 wat er gebeurd als er op word geklikt*/
+header button.verander span:nth-of-type(1){
+    transform:
+    translateY(-.4em) 
+    translateX(-.075em) 
+    rotate(-315deg) 
+    scalex(.55);
+}
+
+/* streepje 2 wat er gebeurd als er op word geklikt*/
+header button.verander span:nth-of-type(2){
+    transform:
+    rotate(-45deg)
+    scalex(1.25);
+}
+
+/* streepje 3 wat er gebeurd als er op word geklikt*/
+header button.verander span:nth-of-type(3){
+    transform:
+    translateY(.4em) 
+    translateX(.075em) 
+    rotate(-315deg) 
+    scalex(.55);
+}
+
+
+nav{
+    background-color: #110216;
+    height: 5.5em;
+}
+
+/* logo van gamestate*/
+nav img{
+    width: 5em;
+    padding-left: .5em;
+}
+
+h1,h2,p,h3 {
+    color: white;
+}
+
+/* locatie*/
+ul,li{
+    list-style-type: none;
+}
+
+.locaties{
+    width: 75%;
+}
+
+.locaties h3{
+    padding: 0;
+}
+
+a{
+    font-family: gotham_m;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    padding: .5em 0 .5em 0;
+}
+
+p {
     width: 50%;
+    font-family: gotham_m;
+}
+
+/* amsterdam op pagina 1 en games to play op pagina 2*/
+h1 {
+    width: fit-content;
     position: relative;
     left: 1em;
+    font-family: gotham_b;
+    font-size: 45px;
+    margin-bottom: 4.5em;
+}
+
+h2 { /* bron: https://www.w3schools.com/css/css3_shadows.asp + studentassistente Eva Boogaard*/
+    color: rgb(255, 85, 184);
+    font-family: beon;
+    text-shadow: 0px 0px 6px hotpink;
+    border: 2px solid rgb(107, 193, 255);
+    width: 8em;
+    padding: 8px 16px;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: lighter;
+    animation: animatiebutton 5s linear infinite;
+}
+
+/* pagina 2 article*/
+.games{
+    background-color: transparent;
+    height: auto;
+    padding: 1em;
+}
+
+/*alle buttons op pagina 1 + 2*/
+button{
+    font-family: gotham_b;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 0.5em 1em;
     color: white;
-    font-size: 300%;
-    margin-bottom: 6.5em;
+    background-image: linear-gradient(-112deg,#e44890,#4b277e);
+    border: none;
+    border-radius: 50em;
+    line-height: 1.5em;
 }
 
-h2,p,h3 {
-    color: white;
+/* effect wanneer er over de buttons en links worden gehoverd*/
+button:hover, a:hover {   
+    transition: .1s;
+    color: rgb(118, 248, 255);
+    background-image: linear-gradient(112deg,#e44890,#4b277e) 2 2 2 2;
+    text-shadow: -1px 0px 12px #fff;
+    
 }
 
-h2 { /* bron: https://www.w3schools.com/css/css3_shadows.asp*/
-    color: hotpink;
-    text-shadow: 0px 0px 8px hotpink;
-    font-size: 23px;
-    border: 1px blue;
-
+/*images binnen de article krijgen een andere width dan op pagina 1*/
+.games img{
+    margin: 0 0 0 2em;
+    width: 80%;
+    position: unset;
+    border: 2px double rgb(255, 107, 253);
+    border-radius: 2.5em;
 }
 
-section:nth-of-type(1){
-    max-width: 100%;
+/*h1 op pagina 2 krijgt*/
+.games h1{
+    margin-bottom: 0;
+    position: unset;
+}
+
+/*h2 + h3 op pagina 2 krijgt andere styling met glitch animatie die oneindig doorgaat*/
+.games h2{
+    width: fit-content;
+    text-decoration: none;
+    border: none;
     position: relative;
+    color: white;
+    font-size: 3em;
+    top: 3.5em;
+    font-family: gotham_b;
+    width: auto;
+    animation: glitch 1s cubic-bezier(0,-0.7,.55,1.56) infinite;
 }
 
-section:nth-of-type(1) img {
+.games h3{
+    color: white;
+    font-size: 2em;
+}
+
+/*p op pagina 2 krijgt eigen styling*/
+.games p{
+    color: white;
+    padding: 1em 0 0 .2em;
+    font-size: 1.5em;
+    width: 70%;
+}
+
+/*section op pagina 2 krijgt padding om ervoor te zorgen dat de plaatjes en tekst niet helemaal tegen de rand komt te staan*/
+.games section{
+    padding: 1em 0 3em 1em;
+}
+
+/*section voor de iconen + tekst flexbox zodat icoon naast p komt te staan*/
+.svg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*iconen klein gemaakt zodat ze naast de p kunnen */
+.svg img{
+    border: none;
+    width: 15%;
+    position: unset;
+    padding: 1em .5em 0 0;
+}
+
+
+/* amsterdam tekst met foto */
+main section:nth-of-type(1){
+    max-width: 100%;
+}
+
+/*openingstijden*/
+main section:nth-of-type(2){
+    padding: 1em;
+}
+
+/* stukje tekst van feestje*/
+article {
+    background-color: white;
+    height: 70em;
+    padding: 1em;
+}
+
+/* image krijgt position zodat de tekst boven de image kan staan*/
+.hoofd section:nth-of-type(1) img {
     position: relative;
     left: 1em;
     top: 5em;
     width: 90%;
 }
 
-
-section:nth-of-type(3) img {
-    width: 10%;
+/* h3 + p styling voor openingstijden*/
+section:nth-of-type(2) h3{
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-section:nth-of-type(3) img:nth-of-type(4) {
+
+main section:nth-of-type(2) p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*properties voor alle iconen op pagina 1*/
+ul img {
+    width: 15%;
+    height: 10%;
+    padding: 1em;
+}
+
+/*unordered list voor de iconen en bijhorende tekst + locatie en contact op pagina 1*/
+.hoofd section:nth-of-type(3) ul{
+    padding: 0%;
+    margin: 0;
+}
+
+.hoofd section:nth-of-type(3) li{
+    display: flex;
+    width: 20em;
+    margin: 0;
+}
+
+/* styling h3 + p + button voor feestje tekst*/
+article h3{
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 3.5em .5em .5em .5em;
+    margin: 0;
+}
+
+article p{
+    color: black;
+    font-size: 1.5em;
+    margin: 0;
+    width: 12em;
+    padding: 0em 1em 2em 1em;
+}
+
+article button{
+    background-image: linear-gradient(-102deg,#029ee3,#4b277e);
+    font-family: gotham_b;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 0.5em 1em;
+    color: white;
+    border: none;
+    border-radius: 50em;
+    line-height: 1.5em;
+    transition: 1s;
+}
+
+/* met javascript wat er gebeurt als er op de button word geklikt komt de class ".effect" achter button en word deze code/animatie uitgevoerd*/
+article button.effect{
+    animation-name: buttoneffect;
+    animation-duration: .5s;
+    animation-iteration-count: 6;
+    animation-direction:alternate;
+    animation-timing-function:cubic-bezier(0.125, 0.995, 1.000, 1);
+}
+
+/* wanneer gebruiker over img hoverd bij een article bounced de image*/
+article img:hover {
+    animation-name: bounce;
+    animation-duration: .5s;
+    animation-direction:alternate;
+    animation-timing-function:cubic-bezier(0.125, 0.995, 1.000, 1);
+    animation-iteration-count: infinite;
+}
+
+/* img 1 bij article feestje pagina 1*/
+.feestje img:nth-of-type(1){
+    position: relative;
+    width: 18em;
+    left: 1em;
+    top: 5em;
+    box-shadow: 0 6px 18px 0  #0000004f;
+}
+
+/* img 2 bij article feestje pagina 1*/
+.feestje img:nth-of-type(2){
+    position: relative;
+    width: 13em;
+    left: 4em;
+    top: 0;
+    box-shadow: 0 2px 18px 0 #00000084;
+}
+
+section:nth-of-type(3) li p {
+    width: 85%;
+    padding: 0,1em,0,1em;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+section:nth-of-type(3) li:nth-of-type(4){
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+    padding: 1em;
+    position: relative;
+}
+
+/*"huidig" stukje tekst*/
+section:nth-of-type(3) li:nth-of-type(5) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+    padding: 4em 0 4em 1em;
+    margin-right: 0;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) img {
     width: 90%;
+    height: 100%;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) p{
+    font-size: small;
+    width: 10em;
+}
+
+section:nth-of-type(3) li:nth-of-type(5) h3{
+    font-size: 2.5em;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+
+section:nth-of-type(3) li:nth-of-type(5) p{
+    font-size: 1.5em;
+    font-weight: light;
+    width: 75%;
+}
+
+section:nth-of-type(3) li:nth-of-type(5) img{
+    width: 18em;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) h3:first-of-type{
+    left: 10px;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) h3:last-of-type{
+    padding-left: 6em;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) p:last-of-type{
+    font-size: small;
+    width: 10em;
+    padding-left: 2em;
+}
+
+footer{
+    background-color: #000000;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer h2{
+    font-family: gotham_m;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    border: none;
+    padding: 0;
+    text-shadow: none;
+    width: 100%;
+    padding: 2em 0 .5em 0;
+    font-weight: bold;
+    animation: none;
+}
+
+footer section{
+    width: 40%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer section:nth-of-type(3){
+    font-family: gotham_m;
+    font-size: 16px;
+    width: 100%;
+}
+
+footer section:nth-of-type(3) img{
+    width: 9em;
+    padding: 1em;
+}
+
+a:focus, button:focus{
+    text-decoration: none;
+    transition: color .5s;
+    outline-color: invert;
+    outline-style: none;
+    background-color: #000000;
+    animation: glitch 1s cubic-bezier(0,-0.7,.55,1.56) infinite;
+}
+
+a:is(:hover, :focus-visible), button:is(:hover, :focus-visible){
+    box-shadow:0 .25em 0;
+    color: rgb(118, 248, 255);
+    transform: scaleX(1);
 }
 
 
+a::after, button::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: .2em;
+    background-color: rgb(253, 0, 0);
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition:transform .5s;
+}
+
+/*effect wat er gebeurt als gebruiker klikt op de link*/
+footer a:active{
+    background-color: rgb(253, 0, 0);
+    color: rgb(118, 248, 255);
+}
+
+
+/* bron: https://www.youtube.com/watch?v=_13a3r6MYeM&t=136s&ab_channel=OnlineTutorials, de originele kleur van de button is roze en op specifieke
+momenten gaat de kleur uit (word paars) en er komt een box shadow met steeds een hogere blur zodat er een mooie gradient is waardoor het lijkt 
+alsof de button licht geeft */
+@keyframes animatiebutton{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: rgb(255, 45, 150);
+        box-shadow: none;
+    }
+    
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: rgb(74, 80, 255);
+        box-shadow: 0 0 10px #03bcf4,
+                    0 0 20px #03bcf4,
+                    0 0 25px #03bcf4,
+                    0 0 60px #03bcf4,
+                    0 0 140px #03bcf4;
+    }
+}
+
+/* glitch animatie, text krijgt aan beide kanten een shadow met blauw en roze die verschijnt en daarna weer weg gaat*/
+@keyframes glitch{
+    0%{
+
+    }
+    50%{
+        
+        text-shadow: 6px 2px 2px #e44890, -3px -4px 2px #2cd5ff;
+    }
+
+    100%{
+
+    }
+}
+
+/* animatie voor button effect, button gaat via de y as omhoog*/
+@keyframes bounce{
+    0% {
+        transform:translateY(0);
+      }
+
+    100% {
+        transform:translateY(-8rem);
+      }
+    
+}
+
+/* animatie voor button effect, button gaat via de y as omhoog*/
+@keyframes buttoneffect{
+    0% {
+        transform:translateY(0);
+      }
+
+    100% {
+        transform:translateY(-8rem);
+      }
+}
+
+/*code voor als gebruiker browser in dark mode heeft*/
+@media (prefers-color-scheme: dark) {
+    html{background-color: black;}
+
+    p, h1, h3{
+        color: white;
+    }
+
+    h2{ 
+        color: #e44890;
+    }
+
+    ul{
+        background-color: black;
+    }
+
+    .hoofd section:nth-of-type(2){
+        color: white;
+    }
+
+    .hoofd section:nth-of-type(4){
+        background-color: white;
+    }
+     
+}
+
+/* code voor als gebruiker browser mode in light mode heeft*/
+@media (prefers-color-scheme: light) {
+    html{background-color: white;}
+
+    nav{
+        background-color: #e44890;
+    }
+
+    .games{
+        background-color: #ffd733;
+        border: none;
+    }
+
+    p, h1, h3{
+        color: black;
+    }
+
+    h2{
+        color: #48d2e4;
+    }
+
+    ul{
+        background-color: white;
+    }
+
+    section:nth-of-type(2) h3, section:nth-of-type(2) p{
+        color: white;
+    }
+
+    .hoofd section:nth-of-type(4){
+        background-color: rgb(255, 85, 184);
+    }
+        
+    .hoofd section:nth-of-type(4) h3, section:nth-of-type(4) p{
+        color: white;
+    }
+
+    .spellenbody footer{
+        background-image: linear-gradient(#ffd733, #ff2424, #ff6262);
+    }
+
+    .hoofd footer{
+        background-color: white;
+    }
+
+    .hoofd footer section:nth-of-type(1) a, .hoofd footer h2, .hoofd footer section:nth-of-type(2) a{
+        color:black;
+    }
+        
+}
