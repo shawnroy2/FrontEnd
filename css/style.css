@@ -39,6 +39,86 @@ header{
     z-index: 1;
 }
 
+nav{
+    background-color: #110216;
+    height: 5.5em;
+}
+
+
+a{
+    font-family: gotham_m;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+    padding: .5em 0 .5em 0;
+}
+
+p {
+    width: 50%;
+    font-family: gotham_m;
+}
+
+/* amsterdam op pagina 1 en games to play op pagina 2*/
+h1 {
+    width: fit-content;
+    position: relative;
+    left: 1em;
+    font-family: gotham_b;
+    font-size: 45px;
+    margin-bottom: 4.5em;
+}
+
+h2 { /* bron: https://www.w3schools.com/css/css3_shadows.asp + studentassistente Eva Boogaard*/
+    color: rgb(255, 85, 184);
+    font-family: beon;
+    text-shadow: 0px 0px 6px hotpink;
+    border: 2px solid rgb(107, 193, 255);
+    width: 8em;
+    padding: 8px 16px;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    font-weight: lighter;
+    animation: animatiebutton 5s linear infinite;
+}
+
+/* pagina 2 article*/
+.games{
+    background-color: transparent;
+    height: auto;
+    padding: 1em;
+}
+
+/*alle buttons op pagina 1 + 2*/
+button{
+    font-family: gotham_b;
+    font-size: 21px;
+    font-weight: 200;
+    padding: 0.5em 1em;
+    color: white;
+    background-image: linear-gradient(-112deg,#e44890,#4b277e);
+    border: none;
+    border-radius: 50em;
+    line-height: 1.5em;
+}
+
+h1,h2,p,h3 {
+    color: white;
+}
+
+/* locatie*/
+ul,li{
+    list-style-type: none;
+    padding: 0;
+}
+
+.locaties{
+    width: 75%;
+    padding-left: 2em;
+}
+
 /* button in header menu*/
 header button{
     display:grid;
@@ -116,92 +196,14 @@ header button.verander span:nth-of-type(3){
     scalex(.55);
 }
 
-
-nav{
-    background-color: #110216;
-    height: 5.5em;
-}
-
 /* logo van gamestate*/
 nav img{
     width: 5em;
     padding-left: .5em;
 }
 
-h1,h2,p,h3 {
-    color: white;
-}
-
-/* locatie*/
-ul,li{
-    list-style-type: none;
-}
-
-.locaties{
-    width: 75%;
-}
-
 .locaties h3{
     padding: 0;
-}
-
-a{
-    font-family: gotham_m;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    width: 100%;
-    padding: .5em 0 .5em 0;
-}
-
-p {
-    width: 50%;
-    font-family: gotham_m;
-}
-
-/* amsterdam op pagina 1 en games to play op pagina 2*/
-h1 {
-    width: fit-content;
-    position: relative;
-    left: 1em;
-    font-family: gotham_b;
-    font-size: 45px;
-    margin-bottom: 4.5em;
-}
-
-h2 { /* bron: https://www.w3schools.com/css/css3_shadows.asp + studentassistente Eva Boogaard*/
-    color: rgb(255, 85, 184);
-    font-family: beon;
-    text-shadow: 0px 0px 6px hotpink;
-    border: 2px solid rgb(107, 193, 255);
-    width: 8em;
-    padding: 8px 16px;
-    border-radius: 0.5em;
-    text-align: center;
-    margin: 0;
-    font-size: 22px;
-    font-weight: lighter;
-    animation: animatiebutton 5s linear infinite;
-}
-
-/* pagina 2 article*/
-.games{
-    background-color: transparent;
-    height: auto;
-    padding: 1em;
-}
-
-/*alle buttons op pagina 1 + 2*/
-button{
-    font-family: gotham_b;
-    font-size: 21px;
-    font-weight: 200;
-    padding: 0.5em 1em;
-    color: white;
-    background-image: linear-gradient(-112deg,#e44890,#4b277e);
-    border: none;
-    border-radius: 50em;
-    line-height: 1.5em;
 }
 
 /* effect wanneer er over de buttons en links worden gehoverd*/
@@ -360,6 +362,7 @@ article button{
     border-radius: 50em;
     line-height: 1.5em;
     transition: 1s;
+    position: none;
 }
 
 /* met javascript wat er gebeurt als er op de button word geklikt komt de class ".effect" achter button en word deze code/animatie uitgevoerd*/
@@ -608,10 +611,7 @@ alsof de button licht geeft */
         color: #e44890;
     }
 
-    ul{
-        background-color: black;
-    }
-
+    
     .hoofd section:nth-of-type(2){
         color: white;
     }
