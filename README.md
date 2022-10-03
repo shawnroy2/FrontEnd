@@ -46,8 +46,7 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Gamestate Amsterdam 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
-  <img src="https://user-images.githubusercontent.com/27526178/193482122-d8002834-a8fc-43ca-86d7-015033b2dcfb.jpg">
+  <img width="20em" height="60em"src="https://user-images.githubusercontent.com/27526178/193482122-d8002834-a8fc-43ca-86d7-015033b2dcfb.jpg">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Gamestate Games To Play
