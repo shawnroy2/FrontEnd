@@ -45,13 +45,14 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   https://www.gamestate.com/play/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Gamestate Amsterdam 
-  <img width="20em" height="60em"src="https://user-images.githubusercontent.com/27526178/193482122-d8002834-a8fc-43ca-86d7-015033b2dcfb.jpg">
-
+    Gamestate Amsterdam 
+  
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193482122-d8002834-a8fc-43ca-86d7-015033b2dcfb.jpg">
+  
   #### Screenshot(s) van de tweede pagina (small screen):
-  Gamestate Games To Play
-  <img src="https://user-images.githubusercontent.com/27526178/193482193-b5f54bd9-7b66-4068-bb08-e197ae35b33f.jpg">
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+    Gamestate Games To Play
+  
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193482193-b5f54bd9-7b66-4068-bb08-e197ae35b33f.jpg">
  
 </details>
 
@@ -89,8 +90,10 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   verschillende states vormgeven.
 
   #### Motoriek (shocks, elastiekjes)
+  
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  <img src="https://user-images.githubusercontent.com/27526178/193483244-ac7fdc62-87f1-450f-b1a0-e1b13a0cf7b2.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193483244-ac7fdc62-87f1-450f-b1a0-e1b13a0cf7b2.jpg">
+  
   Bevindingen:
   Het is echt heel lastig om een mousepad te gebruiken als je een ziekte hebt zoals parkinson, zelfs het toetsenbord en tab toets is moeilijk.
   
@@ -109,28 +112,6 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
 
 </details>
 
-
-
-## Breakdownschets (week 1)
-
-<details>
-  <summary>uitwerken na afloop 2e werkgroep</summary>
-
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
-
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
-
-</details>
-
-
-
-
-
 ## Voortgang 1 (week 2)
 
 <details>
@@ -143,8 +124,8 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   eigenlijk geen idee heb hoe ik moet beginnen. dit is ook terug te zien in mijn eerste paar weken waar ik qua html en css echt weinig heb.
   
   Code week 2:
-  <img src="https://user-images.githubusercontent.com/27526178/193483624-b6eea6f8-6ccc-4990-b3b7-0bd6fe129ab0.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193483628-1f8f9591-cdef-4266-b7b4-573fb69128b4.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193483624-b6eea6f8-6ccc-4990-b3b7-0bd6fe129ab0.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193483628-1f8f9591-cdef-4266-b7b4-573fb69128b4.jpg">
 
   
 
@@ -167,8 +148,8 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   Na mijn vorige feedback gesprek ben ik ook echt hard aan het werk gegaan en heb ik al mijn content van de pagina in mijn html verwerkt 
   en ben ik aan de slag gegaan met mijn css. helaas liep ik nog wel een klein beetje achter door mijn gebrek aan motivatie in week 1 en begin van week 2
   maar vooruitgang was er.
-  <img src="https://user-images.githubusercontent.com/27526178/193483874-a75b9b96-dd57-4d59-b2e6-1a67be4b9c5b.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193483877-ba784591-819a-474d-92c9-d937dbdecbc9.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193483874-a75b9b96-dd57-4d59-b2e6-1a67be4b9c5b.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193483877-ba784591-819a-474d-92c9-d937dbdecbc9.jpg">
 
 
   ### Verslag van meeting
@@ -227,7 +208,7 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   ### Stand van zaken
   De laatste weken is aangekomen en wat beter gaat is de animaties en de overal vormgeving van mijn website. In deze fase heb ik vooral gefocused op de verbeteringen,
   de surface plane, de animaties en de states.
-  <img src="https://user-images.githubusercontent.com/27526178/193484501-46bcaca8-9df7-46a3-8f61-cd9ed9434406.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193484501-46bcaca8-9df7-46a3-8f61-cd9ed9434406.jpg">
   
   ### Verslag van meeting
    Mijn 3e gesprek was weer met de studentasstintes, ik had een animatie gemaakt voor mijn hamburger menu maar wanneer ik naar mijn 2e pagina ging werkte die animatie
@@ -245,26 +226,25 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-  <img src="https://user-images.githubusercontent.com/27526178/193484762-ec8bdb88-446f-4956-9ef8-d942b8da2cac.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193485189-022522bb-993e-415b-afa7-fca41a146a4f.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193485190-55f868f0-f336-4e6b-9799-79c2d79337ee.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193485191-7e20ea9b-f1a5-4ff1-9f22-fb2e4f9fb731.jpg">
+
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193484762-ec8bdb88-446f-4956-9ef8-d942b8da2cac.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193485189-022522bb-993e-415b-afa7-fca41a146a4f.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193485190-55f868f0-f336-4e6b-9799-79c2d79337ee.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193485191-7e20ea9b-f1a5-4ff1-9f22-fb2e4f9fb731.jpg">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   De animaties maken was leuker en makkelijker dan gedacht ook al moet ik eerlijk zeggen dat ik het redelijk simpel heb gehouden
   vond ik het nog wel goed gaan vooral hoe ik ben begonnen en als ik dan kijk naar het eind resultaat ben ik trots op wat ik bereikt heb met veel 
   struggles, moeite en iritatie.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
   
 
   ### Dit was lastig/Is niet gelukt:
-  <img src="https://user-images.githubusercontent.com/27526178/193485047-d763f4a6-681e-4b5f-b87a-30f5ff1f7b30.jpg">
-  <img src="https://user-images.githubusercontent.com/27526178/193485050-840c46c8-ba36-4086-bf84-748209def43c.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193485047-d763f4a6-681e-4b5f-b87a-30f5ff1f7b30.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/193485050-840c46c8-ba36-4086-bf84-748209def43c.jpg">
 
   mijn hamburger menu laten werken en animatie op 2e pagina is mij helaas niet gelukt.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+
 </details>
 
 
