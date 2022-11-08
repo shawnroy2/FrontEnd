@@ -69,7 +69,7 @@ h1 {
     margin-bottom: 4.5em;
 }
 
-h2 { /* bron: https://www.w3schools.com/css/css3_shadows.asp + studentassistente Eva Boogaard*/
+.neon{ /* bron: https://www.w3schools.com/css/css3_shadows.asp + studentassistente Eva Boogaard*/
     color: rgb(255, 85, 184);
     font-family: beon;
     text-shadow: 0px 0px 6px hotpink;
@@ -104,9 +104,17 @@ button{
     line-height: 1.5em;
 }
 
-h1,h2,p,h3 {
+h1,p,h3 {
     color: white;
 }
+
+h2{
+    color: white;
+    font-family: gotham_b;
+    font-weight: bold;
+    font-size: 2em;
+}
+
 
 /* locatie*/
 ul,li{
@@ -117,6 +125,34 @@ ul,li{
 .locaties{
     width: 75%;
     padding-left: 2em;
+}
+
+/* animaties voor svg plaatje bron: https://www.youtube.com/watch?v=gWai7fYp9PY&t=599s&ab_channel=developedbyed */
+#lichaam{
+    animation: lichaamani .7s ease-out infinite alternate-reverse;
+    transform-origin: bottom;
+}
+
+#ogen{
+    animation: oogbounce .7s ease-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#wenkbrauwen{
+    animation: wenkbrauwbounce  .7s ease-out infinite alternate;
+    transform-origin: bottom;
+}
+
+#mond{
+    animation: mondbounce  .7s ease-out infinite alternate;
+    transform-origin: bottom;
+}
+
+section:nth-of-type(2) ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* button in header menu*/
@@ -202,7 +238,7 @@ nav img{
     padding-left: .5em;
 }
 
-.locaties h3{
+.locaties p{
     padding: 0;
 }
 
@@ -238,15 +274,12 @@ button:hover, a:hover {
     position: relative;
     color: white;
     font-size: 3em;
-    top: 3.5em;
+    top: 4.5em;
+    padding: .5em;
+    margin: 0;
     font-family: gotham_b;
     width: auto;
     animation: glitch 1s cubic-bezier(0,-0.7,.55,1.56) infinite;
-}
-
-.games h3{
-    color: white;
-    font-size: 2em;
 }
 
 /*p op pagina 2 krijgt eigen styling*/
@@ -279,12 +312,12 @@ button:hover, a:hover {
 
 
 /* amsterdam tekst met foto */
-main section:nth-of-type(1){
+.hoofd main section:nth-of-type(1){
     max-width: 100%;
 }
 
 /*openingstijden*/
-main section:nth-of-type(2){
+.hoofd main section:nth-of-type(2){
     padding: 1em;
 }
 
@@ -304,13 +337,13 @@ article {
 }
 
 /* h3 + p styling voor openingstijden*/
-section:nth-of-type(2) h3{
+section:nth-of-type(2) p{
     font-size: 1.5em;
     font-weight: bold;
 }
 
 
-main section:nth-of-type(2) p{
+.hoofd main section:nth-of-type(2) p{
     font-size: 1.5em;
     font-weight: bold;
 }
@@ -335,16 +368,18 @@ ul img {
 }
 
 /* styling h3 + p + button voor feestje tekst*/
-article h3{
+.feestje h2{
     color: black;
     font-size: 3em;
+    font-family: 'gotham_b';
     font-weight: bold;
-    padding: 3.5em .5em .5em .5em;
+    padding: 2.5em .5em .5em .5em;
     margin: 0;
 }
 
 article p{
     color: black;
+    font-family: 'gotham_m';
     font-size: 1.5em;
     margin: 0;
     width: 12em;
@@ -401,7 +436,7 @@ article img:hover {
     box-shadow: 0 2px 18px 0 #00000084;
 }
 
-section:nth-of-type(3) li p {
+.hoofd section:nth-of-type(3) li p {
     width: 85%;
     padding: 0,1em,0,1em;
     font-weight: bold;
@@ -438,6 +473,7 @@ section:nth-of-type(3) li:nth-of-type(4) p{
 section:nth-of-type(3) li:nth-of-type(5) h3{
     font-size: 2.5em;
     font-weight: bold;
+    font-family: 'gotham_b';
     width: 100%;
     margin: 0;
 }
@@ -464,6 +500,16 @@ section:nth-of-type(3) li:nth-of-type(4) p:last-of-type{
     font-size: small;
     width: 10em;
     padding-left: 2em;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(1){
+    width: 50%;
+}
+
+section:nth-of-type(2) ul li:nth-of-type(2){
+    width: 45%;
+    height: 30em;
+    display: flex;
 }
 
 footer{
@@ -599,18 +645,49 @@ alsof de button licht geeft */
       }
 }
 
+@keyframes oogbounce {
+    0%{
+        transform: translateY(0);
+    }
+    
+    100%{
+        transform: translateY(-10em);
+    }
+}
+
+@keyframes wenkbrauwbounce {
+    0%{
+        transform: translateY(0);
+    }
+
+    100%{
+        transform: translateY(-12em);
+    }
+}
+
+@keyframes mondbounce {
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-2em);
+    }  
+}
+
+@keyframes lichaamani{
+    from{
+        transform: rotateX(0);
+    }
+
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
 /*code voor als gebruiker browser in dark mode heeft*/
 @media (prefers-color-scheme: dark) {
     html{background-color: black;}
-
-    p, h1, h3{
-        color: white;
-    }
-
-    h2{ 
-        color: #e44890;
-    }
-
     
     .hoofd section:nth-of-type(2){
         color: white;
