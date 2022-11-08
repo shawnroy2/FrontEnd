@@ -208,6 +208,8 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   ### Stand van zaken
   De laatste weken is aangekomen en wat beter gaat is de animaties en de overal vormgeving van mijn website. In deze fase heb ik vooral gefocused op de verbeteringen,
   de surface plane, de animaties en de states.
+  
+  
   <img width="200px" src="https://user-images.githubusercontent.com/27526178/193484501-46bcaca8-9df7-46a3-8f61-cd9ed9434406.jpg">
   
   ### Verslag van meeting
@@ -247,14 +249,16 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
 
 </details>
 
-##herkansing
+## Herkansing 
 
   uiteindelijk bleek dat mijn site toch te slordig was zo kreeg ik als feedback terug dat ik h3tje's had waar ze helemaal niet hoorden en ik 
   miste bij mijn kopjes een font. Verder kreeg ik ook nog aangeraden om te kijken naar svg bestanden en hoe ik die kan importeren en animeren.
   
   Ik ben begonnen met het aanpassen van mijn html om die zo netjes mogelijk te maken. Waar nodig was heb ik een h2 toegevoegd in plaats van de h3 en 
   waar niet nodig was heb ik het veranderd naar een p. 
-  <img width="200px" src= "https://user-images.githubusercontent.com/27526178/200604337-ca7bf2a9-3c1d-408a-ae5a-8669efc349d5.jpg">
+  
+  
+  <img width="500px" src= "https://user-images.githubusercontent.com/27526178/200604337-ca7bf2a9-3c1d-408a-ae5a-8669efc349d5.jpg">
   
   Daarna heb ik alles een font gegeven zodat de site er professioneler en strakker uitziet en als 1 geheel. 
   
