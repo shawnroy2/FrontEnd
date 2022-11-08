@@ -247,7 +247,22 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
 
 </details>
 
+##herkansing
 
+  uiteindelijk bleek dat mijn site toch te slordig was zo kreeg ik als feedback terug dat ik h3tje's had waar ze helemaal niet hoorden en ik 
+  miste bij mijn kopjes een font. Verder kreeg ik ook nog aangeraden om te kijken naar svg bestanden en hoe ik die kan importeren en animeren.
+  
+  Ik ben begonnen met het aanpassen van mijn html om die zo netjes mogelijk te maken. Waar nodig was heb ik een h2 toegevoegd in plaats van de h3 en 
+  waar niet nodig was heb ik het veranderd naar een p. 
+  <img width="200px" src= "https://user-images.githubusercontent.com/27526178/200604337-ca7bf2a9-3c1d-408a-ae5a-8669efc349d5.jpg">
+  
+  Daarna heb ik alles een font gegeven zodat de site er professioneler en strakker uitziet en als 1 geheel. 
+  
+  en tot slot heb ik gekeken naar de svg plaatjes, en ben ik in illustrator gaan werken om mijn eigen mini arcade personage te creeeren. Daarna 
+  heb ik die geexporteerd als svg en heb ik de code geplakt in mijn html
+
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/200604074-2d0d00e0-6d65-4981-beb3-aaea686cc101.jpg">
+  <img width="200px" src="https://user-images.githubusercontent.com/27526178/200605609-7466c9b9-f37a-473e-87dd-7eb350bb74c4.jpg">
 
 
 
@@ -266,5 +281,8 @@ De website waar ik voor gekozen heb is Gamestate Amsterdam omdat, ik iemand ken 
   
   3. bron 3 hoe maak ik een neon button die als animatie heeft dat ie aan en uit flikkert zoals een neon bordje?
   https://www.youtube.com/watch?v=_13a3r6MYeM&t=136s&ab_channel=OnlineTutorials
+  
+  4. bron 4 hoe importeer ik een svg plaatje naar mijn html en animeer ik die?
+  https://www.youtube.com/watch?v=gWai7fYp9PY&t=599s&ab_channel=developedbyed
 
 </details>
